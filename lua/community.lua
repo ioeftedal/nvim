@@ -12,4 +12,6 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+
 }
