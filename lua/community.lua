@@ -8,6 +8,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.recipes.disable-tabline" },
   -- import/override with your plugins folder
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.nix" },
