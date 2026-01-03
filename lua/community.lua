@@ -14,5 +14,5 @@ return {
   { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 }
