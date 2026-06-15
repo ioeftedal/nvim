@@ -23,5 +23,23 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+if vim.fn.executable("win32yank.exe") == 1 then
+  vim.g.clipboard = {
+    name = "win32yank",
+    copy = {
+      ["+"] = "win32yank.exe -i --crlf",
+      ["*"] = "win32yank.exe -i --crlf",
+    },
+    paste = {
+      ["+"] = "win32yank.exe -o --lf",
+      ["*"] = "win32yank.exe -o --lf",
+    },
+    cache_enabled = 1, -- CRITICAL: Must be 1 to cache the clipboard data
+  }
+end
+
+-- Keep this set so Neovim knows to default to the system clipboard
+vim.opt.clipboard = "unnamedplus"
+
 require "lazy_setup"
 require "polish"
