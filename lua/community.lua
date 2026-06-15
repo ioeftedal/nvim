@@ -12,6 +12,7 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.nix" },
+  { import = "astrocommunity.pack.typst" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.pack.cpp" },
